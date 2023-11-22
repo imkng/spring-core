@@ -13,5 +13,7 @@
         <property name="city" value="ballia" />
     </bean>
 <!--    auto wire byname address will be same as bean name  -->
-    <bean class="org.springcore.autowire.Employee" name="employee" autowire="byName"/>
+<!--    <bean class="org.springcore.autowire.Employee" name="employee" autowire="byName"/>-->
+
+    <bean class="org.springcore.autowire.Employee" name="employee" autowire="byType"/>
 </beans>
