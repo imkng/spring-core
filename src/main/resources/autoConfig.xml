@@ -12,8 +12,14 @@
         <property name="street" value="cdiofd" />
         <property name="city" value="ballia" />
     </bean>
+    <bean class="org.springcore.autowire.Address" name="address1">
+        <property name="street" value="232313" />
+        <property name="city" value="Kanpur" />
+    </bean>
 <!--    auto wire byname address will be same as bean name  -->
 <!--    <bean class="org.springcore.autowire.Employee" name="employee" autowire="byName"/>-->
 
-    <bean class="org.springcore.autowire.Employee" name="employee" autowire="byType"/>
+<!--    <bean class="org.springcore.autowire.Employee" name="employee" autowire="byType />-->
+<!--    auto wire by constructor  -->
+    <bean class="org.springcore.autowire.Employee" name="employee" autowire="constructor" />
 </beans>
