@@ -10,9 +10,13 @@
 
     <context:annotation-config />
 
-    <bean class="org.springcore.autowire.annotation.Address" >
+    <bean class="org.springcore.autowire.annotation.Address" name="temp" >
         <property name="street" value="cdiofd" />
         <property name="city" value="ballia" />
+    </bean>
+    <bean class="org.springcore.autowire.annotation.Address" name="temp2" >
+        <property name="street" value="cdiofd" />
+        <property name="city" value="Kanpur" />
     </bean>
     <bean class="org.springcore.autowire.annotation.Employee" name="employee" />
 </beans>
